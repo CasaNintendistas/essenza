@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header>
+        <h2>
+            Essenza
+        </h2>
+        <nav>
+            <a href="./site.html">Início</a>
+            <a href="./produtos.html">Produtos</a>
+        </nav>
+    </header>
+
+    <main id="main-produto">
+        <h1>produtos</h1>
+        <p class="subtitulo">explore toda nossa coleção</p>
+
+        <div class="botoes">
+            <button class="tag-produto">todos</button><button class="tag-produto" todos </button><button
+                    class="tag-produto">todos
+
+                </button><button class="tag-produto">
+
+                </button>
+
+        </div>
+        <div class="produtos"></div>
+
+    </main>
+    <footer>
+        <h2>Essenza</h2>
+        <p>Produtos com design e qualidade para o seu dia a dia.</p>
+
+        <p class="copyright">&copy; 2026 Essenza. Todos os direitos reservados.</p>
+    </footer>
+
+    <script type="module" src="./data.js"></script>
+    <script type="module">
+        import { produtos } from './data.js'
+
+        const container = document.querySelector('.produtos')
+        for (let item of produtos)
+
+            container.innerHTML += `
+                    <div class="card">
+                    <img src="./assets/images/relogio.jpeg" alt="Relógio Clássico">
+        
+                    <div class="detalhes">
+                        <div class="detalhes-textos">
+                            <p class="tag">${item.tag}</p>
+                            <p class="tag">Acessórios</p>
+                            <h3>Relógio Clássico</h3>
+                            <p class="descricao">Relógio elegante com pulseira de couro.</p>
+                        </div>
+                        <div class="comprar">
+                            <p class="preco">R$ 599,90</p>
+                            <button>Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+                `
+    </script>
 </body>
+
 </html>
