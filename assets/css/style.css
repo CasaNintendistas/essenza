@@ -230,3 +230,33 @@ footer p:not(.copyright) {
     cursor: pointer;
 }
 
+
+
+@media (max-widht ) {
+    
+    header{
+        padding: 20px 10px;
+    
+    }
+
+    #banner{
+        padding: 0 15px;
+    }
+    
+    #destaques{
+        padding: 100px 10px;
+    }
+
+    #main-produto{
+        padding: 50px 10px;
+    }
+    
+}
+
+    
+
+
+
+
+
+
